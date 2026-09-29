@@ -18,7 +18,3 @@ Courses and study paths remember where the reader is. Progress lives in three pl
 ## Installation
 
 Each folder holds one `SKILL.md`. Copy the folders you want into your skills directory (for Claude Code, `~/.claude/skills/`), or upload a folder as a custom skill in the Claude app. Then ask for what you want in plain words: “make me a course on…”, “a study path on…”, “a diagram of…”, “write a book on… in HTML”.
-
-## Language
-
-Everything is in English: the instructions, the generated pages and their typography (curly quotes and apostrophes, English hyphenation).
