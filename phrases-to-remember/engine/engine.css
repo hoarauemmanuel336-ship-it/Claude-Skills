@@ -1,0 +1,37 @@
+#ptr{background:#0a0a0a;padding:32px 28px;color:#f2f2f2;font-family:"Inter",system-ui,sans-serif}
+#ptr .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+#ptr .mono{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace}
+#ptr .tag{font-size:11px;letter-spacing:.12em;color:#8a8a8a}
+#ptr .header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+#ptr .topic{font-family:"Cormorant Garamond",Georgia,serif;font-size:32px;font-weight:500;line-height:1.15;color:#fff;margin:8px 0 10px}
+#ptr .intro{font-size:15px;line-height:1.6;color:#a3a3a3;margin:0}
+#ptr .part{margin-top:36px}
+#ptr .head{display:flex;align-items:center;gap:10px;min-height:22px;padding-bottom:12px;margin-bottom:12px;border-bottom:1px solid rgba(255,255,255,.25)}
+#ptr .num{font-size:11px;color:#fff;padding:3px 7px;border:1px solid #fff}
+#ptr .ttl{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#fff}
+#ptr .ph{padding:8px 0;display:flex;gap:14px;align-items:flex-start}
+#ptr .txt{font-family:"EB Garamond",Georgia,serif;font-size:20px;line-height:1.55;margin:0;flex:1}
+#ptr.choice .ph{cursor:pointer}
+#ptr .box{flex:none;width:18px;height:18px;border:1.5px solid #fff;margin-top:6px;display:flex;align-items:center;justify-content:center;box-sizing:border-box}
+#ptr .box svg{visibility:hidden}
+#ptr .ph:hover .box{background:rgba(255,255,255,.15)}
+#ptr .redo{flex:none;font-size:10px;letter-spacing:.1em;color:#fff;margin-top:9px;display:none}
+#ptr .ph.on .box{border-color:#ef4444;background:transparent}
+#ptr .ph.on .box svg{visibility:visible}
+#ptr .ph.on .txt{color:#8a8a8a}
+#ptr .ph.on .redo{display:block}
+#ptr .notes{margin-top:44px}
+#ptr textarea{display:block;width:100%;box-sizing:border-box;min-height:120px;resize:vertical;background:#1c1c1c;border:none;border-radius:0;padding:16px 18px;color:#fff;font-size:16px;line-height:1.6;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;outline:none;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,0 100%);cursor:text}
+#ptr textarea:hover{background:#222}
+#ptr textarea:focus{background:#262626}
+#ptr textarea::placeholder{color:#9a9a9a}
+#ptr .bw{text-align:right;margin-top:20px}
+#ptr .btn{display:inline-block;cursor:pointer;user-select:none;background:#fff;color:#000;font-size:13px;line-height:normal;padding:11px 20px;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);white-space:nowrap}
+#ptr .btn:hover{background:#d4d4d4}
+#ptr.final .ph{cursor:default}
+#ptr.final.masked .ph .txt{visibility:hidden;position:relative}
+#ptr.final.masked .ph{cursor:pointer;position:relative}
+#ptr.final.masked .ph::after{content:"";position:absolute;left:0;right:0;top:23px;border-top:1px dashed rgba(255,255,255,.5)}
+#ptr.final.masked .ph.seen .txt{visibility:visible}
+#ptr.final.masked .ph.seen::after{display:none}
+@media(max-width:520px){#ptr{padding:32px 18px}#ptr .txt{font-size:18px}#ptr .bw{text-align:center}#ptr .choice-btn{display:block}#ptr .header{flex-direction:column}}

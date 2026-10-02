@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{TITLE}}</title>
+<style>
+{{FONTS}}
+</style>
+<style>
+{{CSS}}
+</style>
+</head>
+<body class="s2 d3">
+<header class="topbar" lang="en">
+  <span class="brand" id="brand"></span>
+  <span class="pgnow" id="pgnow">p. <input class="pgin" id="pgin" type="text" inputmode="numeric" value="1" aria-label="Go to page"> / <span id="pgtot"></span></span>
+  <button class="tocbtn" id="tocbtn" type="button" aria-controls="toc" aria-expanded="true">Contents</button>
+</header>
+<div class="bar"><i></i></div>
+<div class="tocmask"></div>
+<nav id="toc" lang="en" aria-label="Contents">
+  <div class="size"><span class="lab">Text size</span><span class="btns"><button type="button" data-tz="-1" aria-label="Smaller text">A−</button><button type="button" data-tz="0" aria-label="Default size">A</button><button type="button" data-tz="1" aria-label="Larger text">A+</button></span></div>
+  <p class="choice-label">Scope</p>
+  <div class="picker scope"><span data-scope="1" tabindex="0" role="button">Core<b></b></span><span data-scope="2" tabindex="0" role="button">Extended<b></b></span><span data-scope="3" tabindex="0" role="button">Complete<b></b></span></div>
+  <p class="choice-label">Depth</p>
+  <div class="picker"><span data-depth="1" tabindex="0" role="button">Abridged<b></b></span><span data-depth="2" tabindex="0" role="button">Standard<b></b></span><span data-depth="3" tabindex="0" role="button">Unabridged<b></b></span></div>
+  <ul id="toc-list"></ul>
+</nav>
+<main lang="{{LANG}}" id="reader">
+  <section class="cover" id="cover">
+    <p class="eyebrow" id="eyebrow"></p>
+    <h1 id="title"></h1>
+    <p class="sub" id="subtitle"></p>
+    <div class="rule" id="rule"></div>
+    <div lang="en">
+    <p class="choice-label">Scope</p>
+    <div class="picker scope"><span data-scope="1" tabindex="0" role="button">Core<b></b></span><span data-scope="2" tabindex="0" role="button">Extended<b></b></span><span data-scope="3" tabindex="0" role="button">Complete<b></b></span></div>
+    <p class="choice-label">Depth</p>
+    <div class="picker"><span data-depth="1" tabindex="0" role="button">Abridged<b></b></span><span data-depth="2" tabindex="0" role="button">Standard<b></b></span><span data-depth="3" tabindex="0" role="button">Unabridged<b></b></span></div>
+    <div class="size"><span class="lab">Text size</span><span class="btns"><button type="button" data-tz="-1" aria-label="Smaller text">A−</button><button type="button" data-tz="0" aria-label="Default size">A</button><button type="button" data-tz="1" aria-label="Larger text">A+</button></span></div>
+    </div>
+  </section>
+</main>
+<template id="content">
+{{CONTENT}}
+</template>
+<script>
+{{JS}}
+</script>
+</body>
+</html>
